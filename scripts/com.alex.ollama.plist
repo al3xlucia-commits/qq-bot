@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.alex.ollama</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/alex/qq-bot/tools/ollama-cli/ollama</string>
+    <string>serve</string>
+  </array>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>OLLAMA_MODELS</key><string>/Users/alex/qq-bot/tools/ollama-models</string>
+    <key>OLLAMA_HOST</key><string>127.0.0.1:11434</string>
+  </dict>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>StandardOutPath</key><string>/Users/alex/qq-bot/logs/ollama.out.log</string>
+  <key>StandardErrorPath</key><string>/Users/alex/qq-bot/logs/ollama.err.log</string>
+</dict>
+</plist>

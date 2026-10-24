@@ -1,0 +1,43 @@
+{
+  "networks": {
+    "httpServers": [
+      {
+        "name": "http-default",
+        "enabled": true,
+        "host": "0.0.0.0",
+        "port": 3000,
+        "path": "/",
+        "accessToken": "<REDACTED>",
+        "messageFormat": "array",
+        "reportSelfMessage": false
+      }
+    ],
+    "httpClients": [],
+    "wsServers": [
+      {
+        "name": "ws-default",
+        "enabled": true,
+        "host": "0.0.0.0",
+        "port": 3001,
+        "path": "/",
+        "role": "Universal",
+        "accessToken": "<REDACTED>",
+        "messageFormat": "array",
+        "reportSelfMessage": false
+      }
+    ],
+    "wsClients": [
+      {
+        "name": "astrbot",
+        "enabled": true,
+        "url": "ws://host.docker.internal:6199/ws",
+        "role": "Universal",
+        "accessToken": "<REDACTED>",
+        "messageFormat": "array",
+        "reportSelfMessage": false,
+        "reconnectIntervalMs": 5000
+      }
+    ]
+  },
+  "musicSignUrl": ""
+}

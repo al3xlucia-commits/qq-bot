@@ -1,0 +1,18 @@
+# 运行时数据与密钥
+data/
+plugin_data/
+venv/
+.venv/
+*.db
+*.db-shm
+*.db-wal
+*.log
+.env
+configs/**/onebot.json
+configs/**/cmd_config.json
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+tools/
+*.zip

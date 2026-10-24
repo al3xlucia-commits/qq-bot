@@ -1,0 +1,181 @@
+{
+  "Dependency_Install_Guide": {
+    "dependency_install_entry": "打开 WebUI Dashboard -> 全量设置 -> 手动安装依赖，选择“基础能力依赖”或“全能力依赖”。"
+  },
+  "Self_Learning_Basic": {
+    "enable_message_capture": true,
+    "enable_auto_learning": true,
+    "enable_realtime_learning": false,
+    "enable_jargon_learning": true,
+    "jargon_websearch_enabled": true,
+    "enable_style_learning": true,
+    "enable_realtime_llm_filter": false,
+    "enable_web_interface": true,
+    "enable_webui_password": false,
+    "webui_initial_password": "",
+    "web_interface_port": 7833,
+    "web_interface_host": "127.0.0.1"
+  },
+  "Target_Settings": {
+    "target_qq_list": [],
+    "target_blacklist": [],
+    "current_persona_name": ""
+  },
+  "Model_Configuration": {
+    "filter_provider_id": null,
+    "refine_provider_id": null,
+    "reinforce_provider_id": null
+  },
+  "Learning_Parameters": {
+    "learning_interval_hours": 6,
+    "min_messages_for_learning": 50,
+    "max_messages_per_batch": 200,
+    "expression_learning_trigger_messages": 10,
+    "expression_learning_min_interval_seconds": 3600,
+    "topic_detection_interval_messages": 10,
+    "topic_detection_min_interval_seconds": 300
+  },
+  "Filter_Parameters": {
+    "message_min_length": 5,
+    "message_max_length": 500,
+    "confidence_threshold": 0.7
+  },
+  "Style_Analysis": {
+    "style_analysis_batch_size": 100,
+    "style_update_threshold": 0.8
+  },
+  "Advanced_Settings": {
+    "debug_mode": false,
+    "log_level": "info",
+    "save_raw_messages": true,
+    "auto_backup_interval_days": 7,
+    "auto_apply_approved_persona": false
+  },
+  "Machine_Learning_Settings": {
+    "enable_ml_analysis": true,
+    "max_ml_sample_size": 100,
+    "ml_cache_timeout_hours": 1
+  },
+  "Persona_Backup_Settings": {
+    "auto_backup_enabled": true,
+    "backup_interval_hours": 24,
+    "max_backups_per_group": 10
+  },
+  "Goal_Driven_Chat_Settings": {
+    "enable_goal_driven_chat": false,
+    "goal_session_timeout_hours": 24,
+    "goal_auto_detect": true,
+    "goal_max_conversation_history": 40
+  },
+  "Affection_System_Settings": {
+    "enable_affection_system": true,
+    "max_total_affection": 250,
+    "max_user_affection": 100,
+    "affection_decay_rate": 0.95,
+    "daily_mood_change": true,
+    "mood_affect_affection": true
+  },
+  "Mood_System_Settings": {
+    "enable_daily_mood": true,
+    "enable_startup_random_mood": true,
+    "mood_change_hour": 6,
+    "mood_persistence_hours": 24
+  },
+  "Social_Context_Settings": {
+    "enable_social_context_injection": true,
+    "include_social_relations": true,
+    "include_affection_info": true,
+    "include_mood_info": true,
+    "expression_patterns_hours": 24,
+    "context_injection_position": "end"
+  },
+  "Storage_Settings": {
+    "data_dir": "./data/plugin_data/astrbot_plugin_self_learning"
+  },
+  "Database_Settings": {
+    "db_type": "postgresql",
+    "mysql_host": "localhost",
+    "mysql_port": 3306,
+    "mysql_user": "root",
+    "mysql_password": "",
+    "mysql_database": "astrbot_self_learning",
+    "postgresql_host": "localhost",
+    "postgresql_port": 5432,
+    "postgresql_user": "postgres",
+    "postgresql_password": "",
+    "postgresql_database": "astrbot_self_learning",
+    "postgresql_schema": "public",
+    "max_connections": 10,
+    "min_connections": 2
+  },
+  "API_Settings": {
+    "api_key": "",
+    "enable_api_auth": false
+  },
+  "Repository_Settings": {
+    "default_review_limit": 50,
+    "default_pattern_limit": 10,
+    "default_memory_limit": 50,
+    "default_affection_limit": 50,
+    "default_social_limit": 50,
+    "default_psychological_limit": 20,
+    "max_interaction_batch_size": 100,
+    "top_patterns_limit": 10,
+    "recent_interactions_limit": 20,
+    "trend_analysis_days": 7
+  },
+  "Integration_Settings": {
+    "delegate_memory_to_livingmemory": true,
+    "livingmemory_plugin_name": "LivingMemory",
+    "disable_local_memory_when_delegated": true,
+    "delegate_reply_to_group_chat_plus": true,
+    "group_chat_plus_plugin_name": "astrbot_plugin_group_chat_plus",
+    "disable_local_reply_when_delegated": true
+  },
+  "MaiBot_Enhancement": {
+    "enable_maibot_features": true,
+    "enable_expression_patterns": true,
+    "enable_expression_user_scope": false,
+    "enable_realtime_expression_learning": false,
+    "enable_memory_graph": true,
+    "enable_knowledge_graph": true,
+    "enable_time_decay": true
+  },
+  "Persona_Evolution_Settings": {
+    "persona_merge_strategy": "smart",
+    "max_mood_imitation_dialogs": 20,
+    "enable_persona_evolution": true,
+    "persona_compatibility_threshold": 0.6,
+    "use_persona_manager_updates": true,
+    "auto_apply_persona_updates": true,
+    "persona_update_backup_enabled": true
+  },
+  "Runtime_Internal_Settings": {
+    "llm_hook_injection_target": "extra_user_content_parts",
+    "enable_llm_hooks": false,
+    "enable_command_pass_through": true,
+    "use_sqlalchemy": true,
+    "enable_memory_cleanup": true,
+    "memory_cleanup_days": 30,
+    "memory_importance_threshold": 0.3,
+    "shutdown_step_timeout": 8,
+    "task_cancel_timeout": 3,
+    "service_stop_timeout": 5,
+    "llm_hook_context_timeout": 3.0,
+    "messages_db_path": null,
+    "learning_log_path": null,
+    "total_messages_collected": 0
+  },
+  "V2_Architecture_Settings": {
+    "embedding_provider_id": "",
+    "rerank_provider_id": "",
+    "rerank_top_k": 5,
+    "rerank_min_candidates": 3,
+    "provider_retry_interval_seconds": 10.0,
+    "enable_realtime_v2_processing": false,
+    "knowledge_engine": "legacy",
+    "lightrag_query_mode": "local",
+    "lightrag_enable_llm_cache": false,
+    "memory_engine": "legacy"
+  }
+}

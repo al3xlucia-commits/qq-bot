@@ -1,0 +1,25 @@
+{
+  "auto_start": true,
+  "scan_interval": 60,
+  "max_duration": 600,
+  "max_pages": 5,
+  "video_quality": 64,
+  "transcode": false,
+  "delete_after_send": true,
+  "search_keywords": [
+    "<REDACTED>",
+    "<REDACTED>",
+    "<REDACTED>",
+    "<REDACTED>",
+    "<REDACTED>",
+    "<REDACTED>"
+  ],
+  "blacklist_groups": [],
+  "use_whitelist_mode": true,
+  "whitelist_groups": [
+    "<GROUP_ID_2>",
+    "<GROUP_ID_1>"
+  ],
+  "quiet_hours_start": "12:00",
+  "quiet_hours_end": "19:00"
+}
